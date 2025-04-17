@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    {% include 'components/meta.njk' %}
+  </head>
+
+  <body>
+    <div class="container">
+      {% include 'components/header.njk' %}
+      {{ content | safe}}
+      {% include 'components/footer.njk' %}
+    </div>
+
+  </body>
+
+</html>

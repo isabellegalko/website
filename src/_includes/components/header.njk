@@ -1,0 +1,16 @@
+ <header>
+ <span>
+Isabelle Galko
+ </span>
+
+ <nav aria-label="Main Navigation">
+
+    <ul>
+      {%- set navPages = collections.all | eleventyNavigation -%}
+      {%- for item in navPages -%}
+        <li class='{{ 'is-active' if page.url === item.url }}'><a href='{{ item.url }}'>{{ item.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+
+</header>
