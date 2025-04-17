@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+/***************************************
+Reset
+***************************************/
+
+* {
+    margin: 0;
+    padding: 0
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box
+  }
+  
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-optical-sizing: auto;
+  }
+  
+  ul[class],
+  ol[class] {
+    list-style: none
+  }
+  
+  a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto
+  }
+  
+  img,
+  iframe,
+  video {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /***************************************
+  Accessibility 
+  ***************************************/
+  
+  @media(prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+      scroll-behavior: auto !important
+    }
+  }
+  
+  /* TODO: style image alt text when image not loaded */
+
+/***************************************
+  Layout 
+***************************************/
+
+body {
+    font-size: 16px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 3rem 0;
+}
+
+header span {
+    display: inline-block;
+
+}
+
+header nav ul {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+nav li.is-active {
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+
+}
+
+p, li {
+    font-size: 1.2rem;
+}
